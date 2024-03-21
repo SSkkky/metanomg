@@ -1,0 +1,54 @@
+*{
+  font-family: 'Galmuri9', sans-serif;
+  margin: 0;
+}
+
+body{
+  width: 100%;
+  height: 100%;
+  background-color: #C9B5F5;
+}
+
+main {
+  margin: 0 auto;
+  max-width: 430px;
+  height: 100vh;
+  background: url('./assets/bg/1.png');
+  background-repeat: no-repeat;
+  background-position: top;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+
+  animation-name: opening;
+  animation-timing-function: ease-in-out;
+  animation-duration: 10s;
+  animation-direction: alternate;
+
+  img{
+    animation-name: openingLogo;
+    animation-timing-function: ease-in-out;
+    animation-duration: 3s;
+    animation-direction: alternate;
+  }
+}
+
+@keyframes opening {
+  0% {
+    background-position: top;
+  }
+  100% {
+    background-position: bottom;
+  }
+}
+
+@keyframes openingLogo{
+  0%{
+    transform: translateY(-70vh);
+  }
+  100%{
+    transform: translateY(0%);
+  }
+}
