@@ -1,0 +1,55 @@
+#opening {
+    margin: 0 auto;
+    max-width: 430px;
+    height: 100vh;
+    background: url('../assets/bg/1.png');
+    background-repeat: no-repeat;
+    background-position: top;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+    /* 애니메이션 */
+    animation-name: opening;
+    animation-timing-function: ease-in-out;
+    animation-duration: 30s;
+    animation-direction: alternate;
+
+    img {
+        animation-name: openingLogo;
+        animation-timing-function: ease-in-out;
+        animation-duration: 5s;
+        animation-direction: alternate;
+    }
+}
+
+/* ---------------- 애니메이션 --------------- */
+@keyframes opening {
+    0% {
+        background-position: left top;
+    }
+
+    25% {
+        background-position: left bottom;
+    }
+
+    100% {
+        background-position: right bottom;
+    }
+}
+
+@keyframes openingLogo {
+    0% {
+        transform: scale(0%);
+    }
+
+    70% {
+        transform: scale(0%);
+    }
+
+    100% {
+        transform: scale(100%);
+    }
+}
