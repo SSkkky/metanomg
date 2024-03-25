@@ -1,8 +1,8 @@
-@import './constants/typography.scss';
-@import './constants/colors.scss';
+@import './base/reset.scss';
+
+@import './constants/color.scss';
+@import './constants/size.scss';
 
 @import './mixins/flexbox.scss';
-@import './mixins/positions.scss';
+@import './mixins/position.scss';
 @import './mixins/responsive.scss';
-
-@import './module/buttons.scss';

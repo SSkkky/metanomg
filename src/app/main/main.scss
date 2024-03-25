@@ -1,0 +1,54 @@
+@import '../styles/main.scss';
+
+#main {
+    overflow: hidden;
+    width: 100%;
+    height: 100vh;
+    background: url('../assets/bg/1.png');
+    position: relative;
+
+    header {
+        width: 100%;
+        height: 100px;
+        padding: 1rem;
+        box-sizing: border-box;
+
+        .settingCont {
+            .settingIcon {
+                width: 60px;
+                height: 60px;
+                position: absolute;
+                top: 1rem;
+                right: 1rem;
+            }
+        }
+    }
+
+    .centerContents {
+        width: 100%;
+        height: calc(100vh - 240px);
+
+        .metamongImg {
+            margin-left: 10rem;
+        }
+    }
+
+    nav {
+        width: 100%;
+        max-width: 430px;
+        position: fixed;
+        bottom: 0;
+
+        .navigation {
+            padding: 1rem 2rem;
+            display: flex;
+            gap: 1rem;
+            justify-content: space-between;
+
+            li {
+                width: 80px;
+                height: 80px;
+            }
+        }
+    }
+}

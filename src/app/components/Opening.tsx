@@ -1,8 +1,8 @@
 "use client"
 
+import { useRouter } from 'next/navigation';
 import Image from "next/image";
 import TextLogo from '@/app/assets/logo/textLogo2.png';
-import { useRouter } from 'next/navigation';
 import './opening.scss';
 
 export default function Opening() {
